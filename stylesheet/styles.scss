@@ -620,12 +620,15 @@ section{
                     &__container{
                         max-width: 1200px;
                         margin: 0 auto;
+                        display: flex;
+                        align-items: center;
                         
                   display: grid;
                   grid-template-columns: 1fr auto;
                     }
                     &__link{
                         height: 50px;
+                      
                     }
 
                     &__h3{
