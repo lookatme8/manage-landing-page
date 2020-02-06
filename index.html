@@ -134,8 +134,10 @@
 
 
   <section class="learnToday">
+    <div class="learnToday__container">
   <h3 class="learnToday__h3">Simplify how your team works today.</h3>
   <a href="#" class="learnToday__link">Get Started</a>
+</div>
     </section>
 
 
@@ -143,6 +145,8 @@
 </main>
 
   <footer class="footer">
+<div class="footer__background">
+    <div class="footer__container">
       <div class="footer__left">
     
         <div class="footer__social">
@@ -186,8 +190,40 @@
     
   <small class="footer__copyright">Copyright 2020. All Rights Reserved</small>
   
-
-
+</div>
+</div>
 </footer>
+
+<script>
+
+const slider = document.querySelector('.customerFeedback__container');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+</script>
 </body>
 </html>
