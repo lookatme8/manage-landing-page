@@ -374,7 +374,7 @@ section{
         
 
 
-              
+                &__social,
                 &__navigation,
                 &__form,
                 &__left{
@@ -676,6 +676,10 @@ section{
                   
 
 
+               }
+
+               &__social{
+                   margin: 0;
                }
                
 
