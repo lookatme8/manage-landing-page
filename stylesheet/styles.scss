@@ -15,9 +15,17 @@ $neutral-light-gray: hsl(0, 0%, 98%);
 
 body{
     font-family: 'Be Vietnam', sans-serif;
-     padding: 0em 1.5em;
+   
     margin: 0 auto;
+}
 
+header{
+    overflow: hidden;
+    padding: 0 1.5em;
+}
+
+main{
+    padding: 0em 1.5em;
 }
 
 img{
@@ -68,6 +76,7 @@ section{
 }
 
 
+
 .navigation{
         display: flex;
         justify-content: space-between;
@@ -80,17 +89,16 @@ section{
 }
 .hero::before{
     content: "";
-    background-image:url(../images/bg-tablet-pattern.svg);
+    background-image: url(../images/bg-tablet-pattern.svg);
     background-size: 100% 100%;
-    display: inline-block;
-  
+    display: block;
+    background-repeat: no-repeat;
     /*size of image*/
-    height: 500px;
-    width:  500px;
-  
+    height: 450px;
+    width:  450px;
 
     position: absolute;;
-    top: -30%;
+    top: -28%;
     left: 10%;
 
     z-index: -1;
@@ -98,15 +106,15 @@ section{
 
 .hero::after{
     content: "";
-    background-image:url(../images/bg-tablet-pattern.svg);
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: inline-block;
+    display: block;
   
     /*size of  image*/
     height: 350px;
     width:  350px;
   
-
     position: absolute;;
     top: 60%;
     left: 65%;
@@ -117,12 +125,12 @@ section{
 .hero{
     position: relative;
     text-align: center;
-        
+    margin-bottom: 5em;
         &__container{
                 display: grid;
                 grid-template-rows: auto 1fr;
                 grid-row-gap: 1em;
-                padding: 2em 0;
+                padding: 1.5em 0;
         }
 
       
@@ -145,11 +153,10 @@ section{
 
 
 .aboutCompany{
-    
             &__intro{
                     text-align: center;
                     margin-bottom: 3em;
-                    margin-top: 3em;
+                   
             }
 
              &__container{
@@ -220,12 +227,30 @@ section{
             
         }
 
+        .learnToday::before{
+            content: "";
+            background-image: url(../images/bg-tablet-pattern.svg);
+            background-size: 100% 100%;
+            display: block;
+            background-repeat: no-repeat;
+            /*size of image*/
+            height: 480px;
+            width:  480px;
+        
+            position: absolute;;
+            top: 15%;
+            left: -100%;
+            opacity: 0.060;
+            z-index: 1;
+        }
+
 
         .learnToday{
                 text-align: center;
                 padding: 6em 0;
                 background-color: $primary-red;
                 margin: 0 calc(-50vw + 50%);
+                position: relative;
 
                 &__h3{
                     color: $neutral-light-gray;
@@ -266,6 +291,7 @@ section{
                    border-radius: 20px;
                    margin-right: .5em;
                    color: $neutral-grayish-blue;
+                   border: 0;
                 }
 
                 &__form button{
