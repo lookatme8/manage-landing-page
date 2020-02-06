@@ -288,7 +288,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3em 1em;
+  padding: 3em 0em;
 }
 
 .footer__container {
@@ -366,6 +366,14 @@ section {
 
 .footer__social svg {
   margin: 0 auto;
+}
+
+.footer__social svg {
+  margin-right: .8em;
+}
+
+.footer__social svg::last-child {
+  margin: 0;
 }
 
 .footer__social, .footer__navigation, .footer__form, .footer__left {
@@ -570,7 +578,8 @@ section {
     -ms-grid-rows: none;
         grid-template-rows: none;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1500px;
+    padding: 0;
   }
   .footer__left {
     display: -webkit-box;
@@ -611,6 +620,12 @@ section {
     margin-bottom: 1em;
   }
   .footer__social {
+    margin: 0;
+  }
+  .footer__social svg {
+    margin-right: .8em;
+  }
+  .footer__social svg::last-child {
     margin: 0;
   }
 }

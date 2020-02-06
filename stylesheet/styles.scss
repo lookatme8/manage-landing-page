@@ -304,7 +304,7 @@ section{
                 color: $neutral-light-gray;
                 display: flex;
                 flex-direction: column;
-                padding: 3em 1em;
+                padding: 3em 0em;
                 
         
 
@@ -371,6 +371,13 @@ section{
                     margin: 0 auto;
                 }
 
+                &__social svg{
+                   margin-right: .8em;
+               }
+
+               &__social svg::last-child{
+                   margin: 0;
+               }
         
 
 
@@ -639,14 +646,20 @@ section{
             
 
             .footer{
-                     
-                
+        
+           
+
                 &__container{
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     grid-template-rows: none;
                     margin: 0 auto;
-                    max-width: 1200px;
+                    max-width: 1500px;
+                    padding: 0;
+                
+               
+                   
+                   
             }
 
                &__left{
@@ -676,6 +689,7 @@ section{
                    grid-row: 1;
                    height: 40px;
                    margin-bottom: 1em;;
+                   
                   
 
 
@@ -684,7 +698,14 @@ section{
                &__social{
                    margin: 0;
                }
-               
+
+               &__social svg{
+                   margin-right: .8em;
+               }
+
+               &__social svg::last-child{
+                   margin: 0;
+               }
 
              
             }
