@@ -400,14 +400,16 @@ section {
     overflow-x: hidden;
   }
   h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     line-height: 1.2;
+    margin-bottom: .5em;
   }
   h2 {
     font-size: 2.2em;
   }
   p {
     font-size: 1em;
+    line-height: 1.7;
   }
   .navigation svg:last-child {
     display: none;
@@ -502,8 +504,11 @@ section {
             order: 1;
   }
   .hero__text {
-    max-width: 30em;
+    max-width: 35em;
     text-align: left;
+  }
+  .hero__text p {
+    max-width: 22em;
   }
   .hero__link:hover {
     opacity: 0.75;

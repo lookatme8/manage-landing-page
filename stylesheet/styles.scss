@@ -432,8 +432,9 @@ section{
     }
 
     h1{
-            font-size: 3.5em;
+            font-size: 4em;
             line-height: 1.2;
+            margin-bottom: .5em;
     }
 
     
@@ -443,6 +444,7 @@ section{
     
     p{
         font-size: 1em;
+        line-height: 1.7;
     }
 
         
@@ -554,9 +556,16 @@ section{
         }
 
         &__text{
-            max-width: 30em;
+            max-width: 35em;
             text-align: left;
         }
+
+        &__text p{
+            max-width: 22em;
+       
+            }
+
+        
 
         &__link:hover{
            
