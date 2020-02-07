@@ -165,8 +165,14 @@ section {
   padding: 0 0 0 1.5em;
 }
 
+.aboutCompany__container__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .aboutCompany__item span {
-  padding: .5em 1.3em;
+  padding: .4em 1.3em;
   background-color: #f25f3a;
   border-radius: 20px;
   color: #fafafa;
@@ -274,7 +280,7 @@ section {
 
 .learnToday__h3 {
   color: #fafafa;
-  font-size: 3em;
+  font-size: 2.2em;
   margin-bottom: .8em;
 }
 
@@ -397,8 +403,8 @@ section {
     font-size: 3.5em;
     line-height: 1.2;
   }
-  h3 {
-    font-size: 3em;
+  h2 {
+    font-size: 2.2em;
   }
   p {
     font-size: 1em;
@@ -527,9 +533,16 @@ section {
   .aboutCompany__container h3 {
     background: none;
   }
+  .aboutCompany__container p {
+    margin-left: 6.2em;
+    max-width: 75em;
+  }
   .aboutCompany__intro {
     text-align: left;
     margin-right: 10em;
+  }
+  .aboutCompany__item span {
+    margin-right: 1.7em;
   }
   .customerFeedback__container {
     display: -ms-grid;

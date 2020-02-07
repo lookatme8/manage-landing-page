@@ -178,6 +178,8 @@ section{
                    
             }
 
+        
+
              &__container{
                  display: grid;
                  grid-template-rows: repeat(3, 1fr);
@@ -187,16 +189,20 @@ section{
                 padding: 0 0 0 1.5em;
 
                 
-             
+             &__item{
+                 display:flex;
+             }
              
                  
              }
                 &__item span{
-                    padding: .5em 1.3em;
+                    padding: .4em 1.3em;
                     background-color: $primary-red;
                     border-radius: 20px;
                     color: $neutral-light-gray;
                     margin-right: .5em;
+                    
+                    
                 }
 
                 &__item h3{
@@ -309,7 +315,7 @@ section{
 
                 &__h3{
                     color: $neutral-light-gray;
-                    font-size: 3em;
+                    font-size: 2.2em;
                     margin-bottom: .8em;;
                 }
 
@@ -431,8 +437,8 @@ section{
     }
 
     
-    h3{
-        font-size: 3em;
+    h2{
+        font-size: 2.2em;
     }
     
     p{
@@ -586,15 +592,30 @@ section{
        display: flex;
        position: relative;
 
-
+    
+        
         &__container h3{
             background: none;
+      
         }
+
+        &__container p{
+            margin-left: 6.2em;
+            max-width: 75em;
+        }
+   
+      
 
         &__intro{
             text-align: left;
             margin-right: 10em;
         }
+
+        &__item span{
+            margin-right: 1.7em;
+        }
+
+        
           
     }
 
@@ -690,9 +711,6 @@ section{
                       
                     }
 
-                    &__link:hover{
-                            //                
-                    }
 
                     &__h3{
                         max-width: 12em;
