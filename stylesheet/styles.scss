@@ -15,8 +15,6 @@ $neutral-light-gray: hsl(0, 0%, 98%);
 
 body{
     font-family: 'Be Vietnam', sans-serif;
-   
-    margin: 0 auto;
 }
 
 header{
@@ -24,8 +22,9 @@ header{
     padding: 0 1.5em;
 }
 
-main{
-    padding: 0em 1.5em;
+.learnToday,
+.aboutCompany__intro{
+  padding:  0 1.5em;
 }
 
 img{
@@ -75,6 +74,7 @@ section{
     padding: 2em 0;
 }
 
+
 .aboutCompany::before{
     content: "";
     background: none;
@@ -88,7 +88,6 @@ section{
         &__link{
                 display: none;
         }
-
 }
 .hero::before{
     content: "";
@@ -160,7 +159,7 @@ section{
 
 .aboutCompany{
 
-        
+       
 
             &__intro{
                     text-align: center;
@@ -172,8 +171,13 @@ section{
              &__container{
                  display: grid;
                  grid-template-rows: repeat(3, 1fr);
-                 grid-gap: 3em;
-                 width: calc(100vw - .5em);
+                 grid-row-gap: 3em;
+                 //width: calc(100vw - 1em);
+                // margin: 0 calc(-50vw + 50%);
+                padding: 0 0 0 1.5em;
+
+                
+             
              
                  
              }
@@ -190,7 +194,8 @@ section{
                     background-color: $netural-pale-red;
                     font-size: 1.125em;
                     margin-bottom: .5em;
-                    border-radius: 20px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
                 }
 }  
 
@@ -282,7 +287,7 @@ section{
 
         .learnToday{
                 text-align: center;
-                padding: 6em 0;
+                padding: 4em 0;
                 background-color: $primary-red;
                 margin: 0 calc(-50vw + 50%);
                 position: relative;
@@ -309,7 +314,7 @@ section{
                 color: $neutral-light-gray;
                 display: flex;
                 flex-direction: column;
-                padding: 3em 0em;
+                padding: 4em 0em;
                 
         
 
@@ -318,7 +323,7 @@ section{
                 }
 
                 &__form input{
-                   padding: .7em 1.7em;
+                   padding: .85em 1.7em;
                    border-radius: 20px;
                    margin-right: .5em;
                    color: $neutral-grayish-blue;
@@ -386,12 +391,12 @@ section{
         
 
 
-                &__social,
-                &__navigation,
-                &__form,
-                &__left{
-                    margin-bottom: 2em;
-                }
+               &__social,
+               &__navigation,
+               &__form,
+               &__left{
+                   margin-bottom: 2em;
+               }
             
             }
 
@@ -475,7 +480,11 @@ section{
                 margin: 0;
             }
 
-
+            &__link:hover{
+               opacity: 0.75;
+               transition: 0.2s ease-in-out;
+            }
+            
         
     }
 
@@ -507,11 +516,6 @@ section{
         margin: 0 auto;
         position: relative;
       
-      
-      
-      
-        
-
         &__container{
            display: flex;
            justify-content: space-between;
@@ -526,6 +530,13 @@ section{
         &__text{
             max-width: 30em;
             text-align: left;
+        }
+
+        &__link:hover{
+           
+                opacity: 0.75;
+                transition: 0.2s ease-in-out;
+             
         }
     }
 
@@ -620,13 +631,21 @@ section{
                     left: 45%;
                     width: 12%;
              }
+
+             &__link:hover{
+              
+                    opacity: 0.75;
+                    transition: 0.2s ease-in-out;
+                 
+            }
+             
         }
 
     
                 .learnToday{
                     background: url(../images/bg-simplify-section-desktop.svg) no-repeat;
-                    background-position: 20% 100%;
-                   
+                    background-position: center;
+                
                     background-color: $primary-red;
 
                   
@@ -644,6 +663,10 @@ section{
                       
                     }
 
+                    &__link:hover{
+                            opacity: 0.75;                
+                    }
+
                     &__h3{
                         max-width: 12em;
                         text-align: left;
@@ -652,48 +675,54 @@ section{
             
 
             .footer{
-        
+              
            
 
                 &__container{
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(6, 1fr);
                     grid-template-rows: none;
                     max-width: 1200px;
                     margin: 0 auto;
-                    
-                   // background-colored: red;
+              
+                   
                     padding: 0;       
             }
 
+              
+                &__button:hover{
+                
+                        cursor: pointer;
+                        opacity: 0.75; 
+                        transition: 0.2s ease-in-out;
+                     
+                
+                }
            
 
                &__left{
                    display: flex;
                    flex-direction: column;
                    justify-content: space-between;
-               
                    grid-column: 1/2;
                    grid-row: 1;
-                   
-                   
                }
 
 
                &__navigation{
-                   grid-column: 2/3;
+                   grid-column: 3/5;
                    grid-row: 1;
                      
                }
 
                &__copyright{
-                   grid-column: 3/3;
+                   grid-column: 6/6;
                    grid-row: 2;
                   
                }
 
                &__form{
-                   grid-column: 3/3;
+                   grid-column: 6/6;
                    grid-row: 1;
                    height: 40px;
                    margin-bottom: 1em;;
@@ -716,6 +745,12 @@ section{
                    margin: 0;
                }
 
+               &__social,
+               &__navigation,
+               &__form,
+               &__left{
+                   margin-bottom: 0em;
+               }
              
             }
     
