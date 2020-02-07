@@ -13,6 +13,11 @@ $netural-pale-red: hsl(13, 100%, 96%);
 $neutral-light-gray: hsl(0, 0%, 98%); 
 
 
+//doesnt work on firefox 
+::-webkit-scrollbar {
+    display: none;
+    }
+
 body{
     font-family: 'Be Vietnam', sans-serif;
 }
@@ -201,6 +206,7 @@ section{
 
         .customerFeedback{
             text-align: center;
+           
 
             &__img{
                 margin: 0 auto;
@@ -221,7 +227,8 @@ section{
             &__dot{
                     height: 10px;
                     width: 10px;
-                    background-color: $primary-red;
+                    background-color: transparent;
+                    border: 1.2px solid $primary-red;
                     border-radius: 50%;
                     display: inline-block;
                  
@@ -235,6 +242,8 @@ section{
             position: relative;
             width: 100%;
             overflow-x: scroll;
+
+           
             overflow-y: hidden;
           
             transition: all 0.2s;
@@ -435,6 +444,7 @@ section{
     h3{
         font-size: 3em;
     }
+    
     p{
         font-size: 1em;
     }
@@ -788,4 +798,6 @@ section{
 
 
        
-   
+        .active {
+            background-color: $primary-red;
+        }

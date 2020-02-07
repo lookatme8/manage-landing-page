@@ -99,13 +99,13 @@
 
 
   <div class="customerFeedback__container">
-    <div class="customerFeedback__list">
+    <div class="customerFeedback__list" id="customerFeedback__section1">
       <img src="images/avatar-anisha.png" class="customerFeedback__img">
   <h4>Anisha Li</h4>
   <blockquote>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</blockquote>
 </div>
 
-<div class="customerFeedback__list">
+<div class="customerFeedback__list" id="customerFeedback__section2">
   <img src="images/avatar-ali.png" class="customerFeedback__img">
   <h4>Ali Bravo</h4>
   <blockquote>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much 
@@ -113,7 +113,7 @@
   </div>
 
 
-  <div class="customerFeedback__list">
+  <div class="customerFeedback__list" id="customerFeedback__section3">
     <img src="images/avatar-richard.png" class="customerFeedback__img">
   <h4>Richard Watts</h4>
   <blockquote>“Manage allows us to provide structure and process. It keeps us organized 
@@ -121,7 +121,7 @@
     </div>
 
 
-    <div class="customerFeedback__list">
+    <div class="customerFeedback__list" id="customerFeedback__section4">
       <img src="images/avatar-shanai.png" class="customerFeedback__img">
   <h4>Shanai Gough</h4>
   <blockquote>“Their software allows us to track, manage and collaborate on our projects 
@@ -131,10 +131,13 @@
     </div>
     <div class="customerFeedback__carousel">
       
-      <span class="customerFeedback__dot"></span>
-      <span class="customerFeedback__dot"></span>
-      <span class="customerFeedback__dot"></span>
-      <span class="customerFeedback__dot"></span>
+      <a href="#customerFeedback__section1"><span class="customerFeedback__dot active"></span></a>
+      <a href="#customerFeedback__section2"><span class="customerFeedback__dot"></span></a>
+      <a href="#customerFeedback__section3"><span class="customerFeedback__dot"></span></a>
+      <a href="#customerFeedback__section4"><span class="customerFeedback__dot"></span></a>
+
+
+      <!-- <span class="customerFeedback__dot"></span> -->
     </div>
   </div>
     </div>
@@ -208,7 +211,7 @@
 
 </footer>
 
-<script>
+<script type="text/javascript">
 
 const slider = document.querySelector('.customerFeedback__container');
 let isDown = false;
@@ -242,6 +245,8 @@ slider.addEventListener('mousemove', (e) => {
 
 
 
+
 </script>
+
 </body>
 </html>
