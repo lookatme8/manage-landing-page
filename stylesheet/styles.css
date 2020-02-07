@@ -74,6 +74,10 @@ section {
   background: none;
 }
 
+.navigation svg:last-child {
+  cursor: pointer;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,21 +195,6 @@ section {
   margin: .8em;
 }
 
-.customerFeedback__carousel {
-  margin: 0 auto;
-  text-align: center;
-  padding: 1em 0;
-}
-
-.customerFeedback__dot {
-  height: 10px;
-  width: 10px;
-  background-color: transparent;
-  border: 1.2px solid #f25f3a;
-  border-radius: 50%;
-  display: inline-block;
-}
-
 .customerFeedback__container {
   display: -ms-grid;
   display: grid;
@@ -226,7 +215,7 @@ section {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
-  padding: 4em 0 1em 0;
+  padding: 4em 1.5em 1em 1.5em;
 }
 
 .customerFeedback__list {
@@ -235,14 +224,14 @@ section {
   position: relative;
   display: inline-block;
   min-height: 100%;
-  min-width: 320px;
+  min-width: 335px;
 }
 
 .customerFeedback__img {
   position: absolute;
   top: -20%;
   left: 40%;
-  width: 25%;
+  width: 20%;
 }
 
 .customerFeedback__list h4 {
@@ -681,9 +670,5 @@ section {
   .footer__social, .footer__navigation, .footer__form, .footer__left {
     margin-bottom: 0em;
   }
-}
-
-.active {
-  background-color: #f25f3a;
 }
 /*# sourceMappingURL=styles.css.map */
