@@ -299,8 +299,8 @@ section{
             width:  480px;
         
             position: absolute;;
-            top: 15%;
-            left: -100%;
+            top: 10%;
+            left: -110%;
             opacity: 0.060;
             z-index: 1;
         }
@@ -308,7 +308,7 @@ section{
 
         .learnToday{
                 text-align: center;
-                padding: 4em 0;
+                padding: 6em 0;
                 background-color: $primary-red;
                 margin: 0 calc(-50vw + 50%);
                 position: relative;
@@ -709,7 +709,7 @@ section{
                 .learnToday{
                     background: url(../images/bg-simplify-section-desktop.svg) no-repeat;
                     background-position: center;
-                
+                    padding: 4em 0;
                     background-color: $primary-red;
 
                   
