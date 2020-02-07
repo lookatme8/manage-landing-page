@@ -411,6 +411,10 @@ section {
     font-size: 1em;
     line-height: 1.7;
   }
+  .learnToday,
+  .aboutCompany__intro {
+    padding: 0;
+  }
   .navigation svg:last-child {
     display: none;
   }
